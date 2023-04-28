@@ -52,8 +52,8 @@ Enhance the selected image by using equalization and specification, compare the 
 
 我用來調整亮度及對比度的方法是給定兩個變數，亮度值及對比度值，再對每個像素值進行調整，調整的公式為 $contrast * pixel + brightness$
 
-brightness: 對每個像素值加上亮度值，範圍應在-100~100之間，否則圖片在經過調整後會太亮或是太暗
-contrast: 對每個像素值乘上對比度值，如果value在0~1.0之間，會產生較低對比度的圖片，而大於1.0的話，則會產生較高對比度的圖片
+brightness: 對每個像素值加上亮度值，範圍應在-100到100之間，否則圖片在經過調整後會太亮或是太暗
+contrast: 對每個像素值乘上對比度值，如果value在0到1.0之間，會產生較低對比度的圖片，而大於1.0的話，則會產生較高對比度的圖片
 
 ```python
 def transform(brightness, contrast):
